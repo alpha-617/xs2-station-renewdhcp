@@ -1,5 +1,5 @@
 # xs2-stattion-renewdhcp
-bash script to reconnecting to AP after power outage or reboot
+Bash script for reconnecting station mode to AP after power outage or reboot
 tested on Openwrt 19.07
 
 <h2><strong>Requirement </strong></h2><br/>
@@ -43,4 +43,6 @@ KexAlgorithms=diffie-hellman-group1-sha1<br/>
 HostKeyAlgorithms=ssh-dss <br/>
 Ciphers=aes256-cbc
 </pre></code>
-<a href="https://askubuntu.com/questions/836048/ssh-returns-no-matching-host-key-type-found-their-offer-ssh-dss">SSH returns: no matching host key type found. Their offer: ssh-dss<a>
+<a href="https://askubuntu.com/questions/836048/ssh-returns-no-matching-host-key-type-found-their-offer-ssh-dss">SSH returns: no matching host key type found. Their offer: ssh-dss<a> <br/>
+<a href="https://stackoverflow.com/questions/13928116/write-a-shell-script-to-ssh-to-a-remote-machine-and-execute-commands">write a shell script to ssh to a remote machine and execute commands </a> <br/>
+<a href="https://www.perfect-privacy.com/en/manuals/router_openwrt_ssh">SSH tunnel on a Router running OpenWRT</a>
