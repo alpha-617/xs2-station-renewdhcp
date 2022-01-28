@@ -1,2 +1,46 @@
 # xs2-stattion-renewdhcp
 bash script to reconnecting to AP after power outage or reboot
+tested on Openwrt 19.07
+
+<h2><strong>Requirement </strong></h2><br/>
+-sshpass (to enter ssh password automatically when running )
+
+<pre>
+<code>opkg install sshpass <br/>
+opkg install openssh
+</code>
+</pre>
+
+<h2><strong>Running</strong></h2> <br/>
+ex: place auto.sh at /opt/<br/>
+make it executable 
+<pre><code>
+chmod +x auto.sh
+</code></pre>
+change credential inside auto.sh with your username and password<br/>
+<pre><code>
+vi /etc/auto.sh<br/>
+</code>
+</pre>
+run auto.sh <br/>
+<pre>
+<code>/opt/auto.sh -r
+</code>
+</pre>
+
+<h2><strong>Make it run at startup </strong> </h2><br/>
+place in local startup
+<pre><code>
+sleep 20 && /usr/bin/inet-hg680p.sh -r
+</pre></code>
+
+<h2><g-emoji class="g-emoji" alias="scroll" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dc.png"><img class="emoji" alt="scroll" src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png" width="20" height="20"></g-emoji> Troubleshooting </h2>
+- no matching key exchange method found. Their offer: diffie-hellman <br/>
+add host pattern at /etc/ssh/ssh_config
+<pre><code> <br/>
+Host * <br>
+KexAlgorithms=diffie-hellman-group1-sha1<br/>
+HostKeyAlgorithms=ssh-dss <br/>
+Ciphers=aes256-cbc
+</pre></code>
+<a href="https://askubuntu.com/questions/836048/ssh-returns-no-matching-host-key-type-found-their-offer-ssh-dss">SSH returns: no matching host key type found. Their offer: ssh-dss<a>
