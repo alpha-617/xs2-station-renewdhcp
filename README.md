@@ -31,7 +31,7 @@ run auto.sh <br/>
 <h2><strong>Make it run at startup </strong> </h2><br/>
 place in local startup
 <pre><code>
-sleep 20 && /usr/bin/inet-hg680p.sh -r
+sleep 20 && /opt/auto.sh -r
 </pre></code>
 
 <h2><g-emoji class="g-emoji" alias="scroll" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dc.png"><img class="emoji" alt="scroll" src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png" width="20" height="20"></g-emoji> Troubleshooting </h2>
