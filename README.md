@@ -1,5 +1,5 @@
 # xs2-station-renewdhcp
-Bash script for reconnecting (bullet2 or TL-WA5210G ubi) with station mode to AP after power outage or reboot
+Bash script for reconnecting (bullet2 or TL-WA5210G ubi) with station mode to AP after power outage or reboot.<br/>
 tested on Openwrt 19.07 
 
 <h2><strong>Requirement </strong></h2><br/>
