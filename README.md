@@ -1,9 +1,9 @@
 # xs2-stattion-renewdhcp
-Bash script for reconnecting station mode to AP after power outage or reboot
-tested on Openwrt 19.07
+Bash script for reconnecting (bullet2 or TL-WA5210G ubi) with station mode to AP after power outage or reboot
+tested on Openwrt 19.07 
 
 <h2><strong>Requirement </strong></h2><br/>
--sshpass (to enter ssh password automatically when running )
+sshpass (to enter ssh password automatically when running )
 
 <pre>
 <code>opkg install sshpass <br/>
