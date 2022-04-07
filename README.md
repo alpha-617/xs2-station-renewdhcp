@@ -19,7 +19,7 @@ chmod +x auto.sh
 </code></pre>
 change credential inside auto.sh with your username and password<br/>
 <pre><code>
-vi /etc/auto.sh<br/>
+vi /opt/auto.sh<br/>
 </code>
 </pre>
 run auto.sh <br/>
