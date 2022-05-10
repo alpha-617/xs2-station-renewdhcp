@@ -6,8 +6,9 @@ tested on Openwrt 19.07
 sshpass (to enter ssh password automatically when running )
 
 <pre>
-<code>opkg install sshpass <br/>
-opkg install openssh
+<code>sshpass <br/>
+openssh-client </br>
+bash
 </code>
 </pre>
 
