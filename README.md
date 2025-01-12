@@ -41,7 +41,8 @@ add host pattern at /etc/ssh/ssh_config
 <pre><code> <br/>
 Host * <br>
 KexAlgorithms=diffie-hellman-group1-sha1<br/>
-HostKeyAlgorithms=ssh-dss <br/>
+HostKeyAlgorithms ssh-rsa <br/>
+PubkeyAcceptedKeyTypes ssh-rsa 
 Ciphers=aes256-cbc
 </pre></code>
 <a href="https://askubuntu.com/questions/836048/ssh-returns-no-matching-host-key-type-found-their-offer-ssh-dss">SSH returns: no matching host key type found. Their offer: ssh-dss<a> <br/>
